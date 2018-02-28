@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href= 'index.css' />
+	<script src="index.js"></script>
+	<script>		
+			var pixelRatio = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');			
+			var html = document.getElementsByTagName('html')[0];
+			var pageWidth = html.getBoundingClientRect().width;
+			html.style.fontSize = pageWidth / 16+ "px";
+	</script>
+</head>
+<body>
+<header>
+	<div class="header">
+		<img src="images/logo.png" alt="" />
+		<div class="search">
+			<span><i class="myFont_1">&#xe65c;</i>寻找宝贝店铺</span>
+		</div>
+	</div> 
+</header>
+<div id="content">
+	<div id="banner">
+		<img src="images/banner1.jpg" alt="" />
+		<ul id="scroll">
+		</ul>
+	</div>
+	<div id="item">
+		<ul>
+			<li>
+				<img src="images/item1.png" alt="" />
+				<span>天猫</span>
+			</li>
+			<li>
+				<img src="images/item2.png" alt="" />
+				<span>聚划算</span>
+			</li>
+			<li>
+				<img src="images/item3.png" alt="" />
+				<span>天猫国际</span>
+			</li>
+			<li>
+				<img src="images/item4.png" alt="" />
+				<span>外卖</span>
+			</li>
+			<li>
+				<img src="images/item5.png" alt="" />
+				<span>天猫超市</span>
+			</li>
+			<li>
+				<img src="images/item6.png" alt="" />
+				<span>充值中心</span>
+			</li>
+			<li>
+				<img src="images/item7.png" alt="" />
+				<span>飞猪旅行</span>
+			</li>
+			<li>
+				<img src="images/item8.png" alt="" />
+				<span>领金币</span>
+			</li>
+			<li>
+				<img src="images/item9.png" alt="" />
+				<span>拍卖</span>
+			</li>
+			<li>
+				<img src="images/item10.png" alt="" />
+				<span>分类</span>
+			</li>
+		</ul>
+		<div class="news">
+			<img src="images/headnew.png" alt="" />
+			<div class="new">
+				<span>最新</span>
+				<span>今晚让瑜伽陪你上床，让你睡得香甜</span>
+			</div>
+		</div>
+	</div>
+	<div id="buy">
+		<img src="images/buy1.jpg" alt=""/>
+		<img src="images/buy2.jpg" alt=""/>
+		<img src="images/buy3.jpg" alt=""/>
+		<img src="images/buy4.jpg" alt=""/>
+	</div>
+	<div id="cheap">
+		<div class="cheap">
+			<img src="images/cheap.png" alt="" />
+			<span>超实惠</span>
+		</div>
+			<img src="images/cheap1.jpg" alt="" /><!-- 
+		 --><img src="images/cheap3.jpg" alt="" /><!-- 
+		 --><img src="images/cheap4.jpg" alt="" /><!-- 
+		 --><img src="images/cheap5.jpg" alt="" /><!-- 
+		 --><img src="images/cheap2.jpg" alt="" /><!-- 
+		 --><img src="images/cheap6.jpg" alt="" /><!-- 
+		 --><img src="images/cheap7.jpg" alt="" /><!-- 
+		 --><img src="images/cheap8.jpg" alt="" />
+	</div>
+</div>
+<div id="footer">
+	<ul>
+		<li>
+			<i class="myFont_1">&#xe607;</i>
+			<span>首页</span>
+		</li>
+		<li>
+			<i class="myFont_2">&#xe65d;</i>
+			<span>物流</span>
+		</li>
+		<li>
+			<i class="myFont_3">&#xe615;</i>
+			<span>购物车</span>
+		</li>
+		<li>
+			<i class="myFont_4">&#xe606;</i>
+			<span>我的淘宝</span>
+		</li>
+		<li>
+			<i class="myFont_5">&#xe611;</i>
+			<span>更多</span>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

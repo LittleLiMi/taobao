@@ -1,0 +1,235 @@
+body,ul,h2{margin:0;}
+ul{padding:0;}
+ul{list-style: none;}
+img{vertical-align: top;}
+i{font-family: "myFont";font-style:normal;}
+@font-face{
+	font-family: 'myFont';
+	src:url(fonts/iconfont.woff) format('woff'),	
+		url(fonts/iconfont.eot) format('eot'),
+		url(fonts/iconfont.ttf) format('truetype'),
+		url(fonts/iconfont.svg) format('svg');
+		font-weight: normal;
+		font-size: normal;
+}
+html{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+body{
+	width:100%;
+	height:100%;
+	background-color: rgb(238,238,238);
+	overflow: auto;
+}
+
+
+header{
+	width:100%;
+	height: 0.925rem;
+
+	background-color: #fe5400;
+	position: fixed;
+	left: 0;top: 0;
+}
+.header{
+	width:100%;
+	padding-top:0.15rem;
+	padding-bottom: 0.15rem;
+	padding-left:0.925rem; 
+	padding-right:0.125rem;
+	box-sizing: border-box;
+}
+header>.header img{
+	width:0.6rem;height:0.5rem;
+	position: absolute;
+	top:0.18rem;left:0.1rem;
+}
+header>.header .search{   
+	width:100%;height:0.625rem;
+	background-color: #b52600;
+	box-sizing: border-box;
+	border-radius: 0.08rem;
+}
+header>.header .search>span{
+	font-size:0.26rem;
+	display: block;
+	height:0.6rem;
+	line-height:0.6rem;
+	text-align: center;
+	top:0.138rem;
+	color:#f0e0dc;
+}
+header>.header .search i{
+	font-family: "myFont";
+	font-size: 0.28rem;
+	margin-right: 0.1rem;
+}
+header>.header .search>span>.myFont_1{
+	color:#fff;
+	font-weight: bold;
+}
+
+#content{
+	z-index:-1;
+	width:100%;
+	margin-top: 0.925rem;	
+	position: relative;
+}
+#content #banner{
+	width:100%;height:100%;
+	background-color: #fff;
+}
+#content #banner img{width:100%;}
+#content #banner #scroll{
+	position: absolute;
+	top:4rem;right:0.3rem;
+	clear:both;
+	margin:0;padding:0;
+}
+#content #banner #scroll li{
+	float: left;
+	width:0.3rem;
+	height:0.3rem;
+	margin-left: 0.125rem;
+	border-radius: 0.3rem;
+	background: rgba(255,255,255,0.6);
+}
+#content #banner #scroll li.active{background-color: #fe5400;}
+
+#item{width:100%;background-color: #fff;
+	overflow: hidden;}
+#item>ul{
+	width:100%;
+	margin-left: 0.3rem;
+	margin-top:0.5rem;
+}
+#item>ul li{
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+	width:19%;height:2.8rem;
+}
+#item>ul li img{width:2.4rem;height:1.7rem;}
+#item>ul li span{
+	display: block;
+	margin-top:0.4rem;
+	text-align: center;
+	font-size: 0.4rem;
+}
+
+#item>.news{
+	clear: both;
+	position: relative;
+	margin-top:0.4rem;
+	width:100%;
+	height:1.2rem;
+	line-height: 1.2rem;
+}
+#item>.news>img{
+	margin-top:0.3rem;
+	width:20%;height:0.8rem;
+}
+#item>.news>.new{
+	width:78%;height:100%;
+	position: absolute;
+	right: 0;top:0;
+	box-sizing: border-box;
+	font-size:0.5rem;
+	line-height: 1.2rem;
+	border-left:1px solid #ccc;
+}
+#item>.news>.new>span{
+	display:inline-block;
+	font-size:0.5rem;
+	text-align: center;
+	margin-left: 0.6rem;
+}
+#item>.news>.new>span:nth-child(1){	
+	margin-top: 0.2rem;	
+	line-height: 0.8rem;
+	border-radius: 6px;
+	width:1.5rem;height:0.8rem;
+	color: rgb(216,20,33);
+	border:1px solid rgb(216,20,33);
+}
+
+#buy{
+	width:100%;height: 100%;
+	margin-top: 0.4rem;	
+	background-color: #fff;
+	position: relative;
+	top:0;left:0;
+}
+#buy>img{
+	position: absolute;
+	box-sizing: border-box;
+}
+#buy>img:nth-child(1){
+	width:40%;
+	top:0;left:0;
+	border-right: 1px solid #ccc;
+}
+#buy>img:nth-child(2){
+	top:0;right:0;
+	width:60%;height:4.2rem;
+	border-bottom:1px solid #ccc;
+}
+#buy>img:nth-child(3){
+	width:30%;height:4.2rem;
+	top:4.2rem;left:40%;
+	border-right:1px solid #ccc;
+}
+#buy>img:nth-child(4){
+	width:30%;height:4.2rem;
+	top:4.2rem;right:0;
+}
+
+#cheap{
+	overflow: hidden;
+	clear: both;
+	position:relative;
+	top:8.8rem;
+	width:100%;
+	background-color: #fff;
+}
+#cheap>.cheap{
+	width:100%;height:2rem;
+	text-align: center;
+	line-height:2rem;
+}
+#cheap>.cheap img{width:1rem;height:1rem;margin-top: 0.5rem;}
+#cheap>.cheap span{font-size:0.7rem;}
+#cheap>img{
+	border:1px solid #ccc;
+	border-bottom: none;
+	box-sizing: border-box;
+	width: 20%;
+}
+#cheap>img:nth-of-type(1),#cheap>img:nth-of-type(5){width:40%;}
+#footer{
+	width:100%;height:1.3rem;
+	position: fixed;
+	bottom:0;
+	background-color: #fff;
+}
+#footer ul{
+	width:100%;height:100%;
+}
+#footer ul li{
+	float: left;
+	color: rgb(93,101,107);
+	width:20%;height:100%;
+	font-size:0.7rem;
+	box-sizing: border-box;
+	text-align: center;
+}
+#footer ul li i{
+	display: block;
+	line-height:0.9rem;
+}
+#footer ul li span{
+	display: block;
+	font-size:0.4rem;
+}
